@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta type="description" content="ceci est mon portfolio etudient"/>
+    <title>Portfolio de Meriem Zoughbi</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+	 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="boxed">
+	  <div class="flex aligncenter space-between">
+	    <button onclick="openMenu()" class="header-menu-mobile">
+		   <span class="material-icons">menu</span>
+		</button>
+	    <a href="/" class="header-logo">
+		  <img src="images/logo-m.jpg">
+		</a>
+		<ul class="header-menu">
+	      <li><a href="index.html#accueil">Accueil</a></li>
+		  <li><a href="index.html#moi">A propos de moi</a></li>
+		  <li><a href="index.html#copetences">compétences</a></li>
+		  <li><a href="index.html#formation">Formation</a></li> 
+		  <li><a href="index.html#portfolio">Portfolio</a></li> 
+		  <li><a href="index.html#experience">Expérience professionnelle</a></li>
+		  <li><a href="index.html#contact">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+  </header>
+
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2>Mini-Jeu Médical : Vrai ou Faux</h2>
+      
+      <!-- 🔐 Authentification -->
+      <div id="auth-container" class="quiz-box">
+        <p id="auth-message">Veuillez vous connecter pour jouer au quiz.</p>
+        <input type="text" id="username" placeholder="Nom d'utilisateur" />
+        <input type="password" id="password" placeholder="Mot de passe" />
+        <input type="password" id="confirm-password" placeholder="Confirmez le mot de passe" class="hidden" />
+
+        <div class="quiz-buttons">
+          <button onclick="login()" id="login-btn">Se connecter</button>
+          <button onclick="showRegisterForm()" id="show-register-btn">Créer un compte</button>
+          <button onclick="register()" id="register-btn" class="hidden">Valider l'inscription</button>
+          <button onclick="showLoginForm()" id="back-to-login-btn" class="hidden">Retour à la connexion</button>
+        </div>
+
+        <p id="auth-feedback" style="color: red;"></p>
+      </div>
+
+      <!-- 🎯 Quiz -->
+      <div id="quiz-container" class="quiz-box hidden">
+        <p id="welcome-user"></p>
+        <p id="question">Chargement de la question...</p>
+
+        <div class="quiz-buttons">
+          <button onclick="checkAnswer(true)" id="true-btn">Vrai</button>
+          <button onclick="checkAnswer(false)" id="false-btn">Faux</button>
+        </div>
+
+        <p id="feedback"></p>
+        <p id="score">Score : 0</p>
+        <p id="correct-answers">0/3</p>
+        <p id="timer-row">⏱️ Temps restant : <span id="time-left">30</span> secondes</p>
+
+        <button onclick="nextQuestion()" id="next-btn" class="hidden">Question suivante</button>
+        <button onclick="restartQuiz()" id="restart-btn" class="hidden">Rejouer</button>
+        <br><br>
+        <button onclick="logout()">Se déconnecter</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>

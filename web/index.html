@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta type="description" content="ceci est mon portfolio etudient"/>
+    <title>Portfolio de Meriem Zoughbi</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+	 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="boxed">
+	  <div class="flex aligncenter space-between">
+	    <button onclick="openMenu()" class="header-menu-mobile">
+		   <span class="material-icons">menu</span>
+		</button>
+	    <a href="/" class="header-logo">
+		  <img src="images/logo-m.jpg">
+		</a>
+		<ul class="header-menu">
+	      <li><a href="#accueil">Accueil</a></li>
+		  <li><a href="#moi">A propos de moi</a></li>
+		  <li><a href="#competences">compétences</a></li>
+		  <li><a href="#formation">Formation</a></li> 
+		  <li><a href="#portfolio">Portfolio</a></li> 
+		  <li><a href="#experience">Expérience professionnelle</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+  </header>
+  <div id="accueil" class="slider">
+    <img src="images/image.jpg" class="slider-background">
+	<div class="slider-content">
+	  <h1>Zoughbi meriem</h1>
+	  <p>Médecin généraliste en formation en informatique biomédicale</p>
+	</div>	
+  </div>
+  <div id="moi" class="section">
+    <div class="boxed">
+	  <div class="flex toColumn mcenter">
+	    <div class="w40 wm100">
+		  <h2>A propos de moi</h2>
+		</div>
+		<div class="w60 wm100">
+		  <p> Médecin généraliste diplômé de l’Université Abderrahmane Mira de Béjaïa, j’ai exercé au sein d’un établissement de santé publique en Algérie, où j’ai assuré la prise en charge globale de patients, participé à 
+		   </p>
+		</div>
+	  </div>
+	  <div class="toColumn mcenter">
+	   <div class="wm100">
+	    <p>des campagnes de prévention et collaboré à des actions de santé publique. Mon internat hospitalier m’a permis d’acquérir une expérience diversifiée dans plusieurs spécialités, telles que la pédiatrie, la gynécologie-obstétrique, l’ORL et la néphrologie.
+        </p><br>
+	    <p>
+          Actuellement en Master 1 d’Informatique Biomédicale à l’Université Sorbonne Paris Nord, je me spécialise dans les technologies de la santé et la gestion des données médicales. Curieux, rigoureux et doté d’un fort esprit analytique, je m’intéresse aux projets qui allient médecine, informatique et innovation.
+        </p><br>
+        <p>
+          Mon objectif professionnel est de contribuer activement à la transformation numérique du secteur de la santé, en participant au développement de solutions intelligentes qui améliorent le parcours de soins, la qualité des services médicaux et la prise de décision clinique.
+        </p><br>
+        <p>
+          En parallèle, j’ai également enrichi mes compétences pédagogiques en accompagnant des élèves en sciences durant plusieurs années, renforçant ainsi mes capacités de vulgarisation, d’adaptation et de transmission des savoirs.
+        </p>
+		</div>
+	  </div>
+	</div>
+  </div>
+    
+  <div id="competences" class="section dark">
+    <div class="boxed text-center">
+	  <h2>Decouvrire mes competences</h2>
+	  <h4>En informatique:</h4><br><br>
+	  <div class="flex toColumn gap20">
+	    <div class="w25 wm100 skill">
+		  <img src="images/logo-html.jpg">
+		  <h3>HTML</h3>
+		</div>
+		<div class="w25 wm100 skill">
+		  <img src="images/logo-css.jpg">
+		  <h3>CSS</h3>
+		</div>
+		<div class="w25 wm100 skill">
+		  <img src="images/logo-js.webp">
+		  <h3>Javascript</h3>
+		</div>
+		<div class="w25 wm100 skill">
+		  <img src="images/logo-r.png">
+		  <h3>Langage R</h3>
+		</div>
+		<div class="w25 wm100 skill">
+		  <img src="images/logo-python.png">
+		  <h3>Python</h3>
+		</div>
+	  </div><br><br>
+	  <h4>En medecine:</h4><br><br>
+	  <div class="flex toColumn gap20">
+	    <div class="w25 wm100 skill">
+		  <img src="images/examen.png">
+		  <h3>Examen clinique</h3>
+		</div>
+		 <div class="w25 wm100 skill">
+		  <img src="images/diagnostic.png">
+		  <h3>Diagnostic</h3>
+		</div>
+		<div class="w25 wm100 skill">
+		  <img src="images/traitement.png">
+		  <h3>Traitement</h3>
+		</div>
+		 <div class="w25 wm100 skill">
+		  <img src="images/depistage.webp">
+		  <h3>Dépistage</h3>
+		</div>
+		 <div class="w25 wm100 skill">
+		  <img src="images/prevention.png">
+		  <h3>prévention</h3>
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+  <div id="formation" class="section">
+    <div class="boxed text-center">
+	  <h2>FORMATION</h2>
+	  <div class="flex space-between">
+	    <div class="w100 realisation">
+		 <ul>
+		    <li><strong>2024 – 2025 : </strong>Master 1 Informatique Biomédicale Université Sorbonne Paris Nord – Paris, France</li><br>
+            <li><strong>2022 – 2023 : </strong>Diplôme de Docteur en Médecine Université Abderrahmane Mira de Béjaïa – Algérie</li><br>
+            <li><strong>2015 – 2016 : </strong>Baccalauréat – Série Sciences Expérimentales Mention : Très Bien – Lycée Chabane Amer, Aokas – Béjaïa, Algérie</li>
+         </ul>  
+		</div>
+	  </div>
+	</div>
+  </div>
+  
+
+
+  <div id="portfolio" class="section dark">
+    <div class="boxed text-center">
+      <h2>Mon Portfolio</h2>
+      <div class="flex toColumn gap20">
+        <div class="w100 realisation">
+          
+		 <h3>Mini-Jeu Médical : Vrai ou Faux</h3><br>
+         <p>🧠 Testez vos connaissances en médecine avec <strong>Vrai ou Faux</strong>, un mini-jeu interactif qui vous met au défi avec des affirmations médicales à valider… ou pas ! Mais attention, le chrono tourne ⏱️ !</p><br>
+         <p>Conçu pour rendre l’apprentissage plus fun, ce jeu vous permet de jouer à tout moment, suivre vos progrès et vous comparer aux autres. Que vous soyez étudiant ou juste curieux, vous allez adorer apprendre en jouant.</p><br>
+         <p>Créez un compte ou connectez-vous pour commencer. C’est simple, rapide et motivant. Prêt à relever le défi ?</p>
+		 
+         <div class="bouton-container">
+            <a href="jeu.html" class="btn-primary-link">Voir le jeu</a>
+		 </div>         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
+  <div id="experience" class="section">
+   <div class="boxed">
+    <h2>Expériences Professionnelles</h2>
+    <ul>
+      <li>
+        <strong>2024:</strong> Médecin généraliste de santé publique – Établissement Public de Santé de Proximité (E.P.S.P) de Seddouk, Algérie.
+        <ul class="pl">
+          <li>Prise en charge de patients dans un cadre de médecine générale.</li>
+          <li>Suivi médical, dépistage, prévention, éducation à la santé.</li>
+          <li>Participation aux actions de santé publique locales.</li>
+        </ul>
+      </li><br>
+
+      <li class="pl2">
+        <strong>2022 – 2023 :</strong> Interne en médecine – Stage pratique (12 mois) – Centre Hospitalo-Universitaire (CHU) de Béjaïa, Algérie.
+        <ul class="pl">
+          <li><strong>Pédiatrie (3 mois)</strong> – Suivi des nourrissons et enfants, consultations et hospitalisations.</li>
+          <li><strong>Gynécologie-Obstétrique (3 mois)</strong> – Suivi des grossesses, accouchements, urgences gynécologiques.</li>
+          <li><strong>ORL (3 mois)</strong> – Consultations ORL, suivi post-opératoire, participation aux interventions.</li>
+          <li><strong>Néphrologie (3 mois)</strong> – Suivi des patients en insuffisance rénale, hémodialyse, gestion des traitements.</li>
+        </ul>
+      </li><br>
+
+      <li class="pl2">
+        <strong>2018 – 2023 :</strong> Job étudiant – Professeur de soutien scolaire, cours particuliers à domicile.
+        <ul class="pl">
+          <li>Cours de mathématiques, physique et sciences de la vie pour des élèves du lycée.</li>
+          <li>Préparation aux examens nationaux, accompagnement pédagogique individualisé.</li>
+          <li>Adaptation des méthodes en fonction du niveau et des besoins des élèves.</li>
+        </ul>
+      </li>
+    </ul>
+   </div>
+  </div>
+
+  
+  
+  
+  
+
+  <div id="contact" class="section dark">
+   <div class="boxed text-center">
+    <h2>Contactez-moi</h2>
+    <div class="flex toColumn space-between mgap20">
+      <div class="w32 wm100 contact">
+        <span class="material-icons icon">mail</span>
+        <span class="label">E-mail</span>
+        <span class="value">
+          <a href="formulaire.html">Envoyer un message</a>
+        </span>
+      </div>
+      <div class="w32 wm100 contact">
+        <span class="material-icons icon">phone</span>
+        <span class="label">Téléphone</span>
+        <span class="value"><a href="tel:+33759546571">+33 7 59 54 65 71</a></span>
+      </div>
+      <div class="w32 wm100 contact">
+        <span class="material-icons icon">location_on</span>
+        <span class="label">Adresse</span>
+        <span class="value">
+          <a href="https://www.google.com/maps?q=74 Rue Marcel Cachin, 93000 Bobigny" target="_blank">
+            74 Rue Marcel Cachin, 93000 Bobigny
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+ </div>	
+	  
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
