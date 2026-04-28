@@ -13,7 +13,7 @@ const openMenu = () => {
 let currentQuestion = 0;
 let score = 0;
 let timer;
-let timeLeft = 30;
+let timeLeft = 31;
 let isAnswered = false;
 let isQuizFinished = false;
 
