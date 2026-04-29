@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta type="description" content="ceci est mon portfolio etudient"/>
+    <title>Portfolio de Meriem Zoughbi</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
+	 <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</head>
+<body>
+  <header>
+    <div class="boxed">
+	  <div class="flex aligncenter space-between">
+	    <button onclick="openMenu()" class="header-menu-mobile">
+		   <span class="material-icons">menu</span>
+		</button>
+	    <a href="/" class="header-logo">
+		  <img src="images/logo-m.jpg">
+		</a>
+		<ul class="header-menu">
+	      <li><a href="index.html#accueil">Accueil</a></li>
+		  <li><a href="index.html#moi">A propos de moi</a></li>
+		  <li><a href="index.html#copetences">compétences</a></li>
+		  <li><a href="index.html#formation">Formation</a></li> 
+		  <li><a href="index.html#portfolio">Portfolio</a></li> 
+		  <li><a href="index.html#experience">Expérience professionnelle</a></li>
+		  <li><a href="index.html#contact">Contact</a></li>
+		</ul>
+	  </div>
+	</div>
+  </header>
+  
+  <!-- ✅ Formulaire de contact -->
+  <div class="section dark">
+    <div class="boxed text-center">
+      <h2>Envoyez-moi un message</h2>
+      <form id="contact-form" class="formulaire-form">
+        <div class="formulaire-group">
+          <input type="text" name="from_name" placeholder="Votre nom" required />
+        </div>
+        <div class="formulaire-group">
+          <input type="email" name="reply_to" placeholder="Votre e-mail" required />
+        </div>
+        <div class="formulaire-group">
+          <textarea name="message" placeholder="Votre message" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+        <p id="form-status" class="formulaire-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script> <!-- Ton JS si besoin -->
+</body>
+</html>
+	
+	  
+</body>
+<script src="script.js"></script>
+</html>
+
